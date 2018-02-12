@@ -1,0 +1,60 @@
+<JSON, XML?>
+어떤 웹서버로부터 데이터를 받아올 때 쓰이는 것들이다.
+ex ) 나는 Java를 사용하는데 PHP 서버에서 데이터를 받아와야 할 대 언어가 다르고 포맷이 다르지만 내가 만든 데이터가 아니라 다른 곳에서 데이터를 바아올 때 쓰인다.
+
+<XML>
+eXtensible Markup Language의 약자로 데이터를 저장하는 문자열 포맷 방식 중 하나이다.
+http://terms.naver.com/entry.nhn?docId=441343&cid=42081&categoryId=42081
+C와 Java에서 문자열을 넣었을 때 (C는 char 1byte이고 Java는 2byte인 것) 어떻게 통신할 것인가에 대한 불편함 때문에 어떤 특정한 form 을 가지자는 약속으로 xml이 탄생한 것이 아닌가 싶다.
+XML의 장점으론 html의 한계를 극복할 수 있으며 <html><body> 같은 정해져 있는 형식 뿐만 아니라 사용자가 직접 정의한 Tag를 이용할 수 있다.
+단점은 이 정의한 Tag에 적힌 항목이름의 반복으로 데이터가 발생하는 것 때문에 먹는 데이터를 줄이자 해서 나온게 바로 JSON이다.
+
+<JSON>
+데이터를 저장하거나 주고 받을 때 자주 쓰이는 형식. JavaScript Object Notation의 약자인데 JavaScript 언어의 자료형을 텍스트로 표현한 포맷이다.
+key-value 쌍으로 이루어져있으며 사람이 읽기 쉽다.
+프로그래밍 언어에 독립적이라 어디서든 사용할 수 있다. 즉 서로 다른 시스템간에 데이터를 교환하기에 좋고 언어가 다르더라도 데이터를 교환하는데 문제가 없다.
+객체를 {} 로 표현
+모든 데이터는 키와 값으로 표현한다. { "키" : 값 }
+https://ko.m.wikipedia.org/wiki/JSON
+http://json.org/json-ko.html
+=> JSON은 데이터 통신용으로 많이 쓰이고 XML은 config용으로 많이 쓰인다고 한다.
+
+
+<XML을 사용한 Web Beans의 정의>
+http://docs.jboss.org/webbeans/reference/1.0.0.ALPHA2/ko-KR/html/xml.html#d0e3051
+http://jwlee1728.egloos.com/v/1805102
+
+<Bean이란?>
+자주 사용하는 객체를 Singleton 객체로 설정해놓고 어디서든 불러서 쓸 수 있는 것을 Spring에서 Bean이라는 이름으로 붙인 것이다. 재사용이 가능하게 만들어진 Component라는 것이다.
+
+<Spring의 목적>
+1) Inversion of Control(IoC)
+2) Bean Injected(BI)
+
+* Bean : IoC 방식으로 관리하는 오브젝트. Managed Object라고 불리기도 한다. 스프링은 Bean 객체의 생성 및 제어를 담당한다.
+* Bean Factory : IoC를 담당하는 핵심 Container다. Bean의 등록, 생성, 조회 기능을 한다. Bean Factory를 직접 사용하지는 않고, 이를 확장한 Application Context를 사용한다.
+* Application Context : Bean Factory를 호가장한 IoC Container다.
+* Configuration metadata : IoC 컨테이너를 사용하기 위한 configuration 정보들이 들어있다. blueprint으로 볼 수 있다.
+* IoC Container : Bean Factory, ApplicationContext 를 IoC Container 라고 부른다. Container라는 단어 자체가 IoC의 뜻을 내포하고 있다. 흔히 말하는 Spring은 IoC Container와 같은 표현이다.
+
+========================================================================================================
+<JSP vs JSPF> -- 파일 확장자
+JSPF : JSP Fragment의 약자이다. jsp와 별 차이는 없으나 <%@ include %>의 경우 JSP 코드 조각을 소스코드 차원에서 포함시키는 기능을 제공하고 JSP 코드 조각(fragment)을 의미하는 확장자로 .jspf를 사용한 것이다. .jsp로 해도 전혀 차이가 없다.
+정리하자면 JSP의 일부분으로 다른 JSP에 포함되도록 만들어진 것이다. 반복사용되는 것을 JSPF로 뽑아서 JSP 파일에서 중간에 껴 들어가게 한다.
+JSP : JavaServer Pages의 약자로 웹사이트를 보다 쉽게 구축할 수 있도록 만들어주는 Server Side Script 언어이다. Java 언어를 기반으로 하는 스크립트 언어이기 때문에 자바기능을 그대로 사용할 수 있다는 장점이 있다.
+ JSP는 결과 페이지의 컴파일 및 문서를 제공하기 위해 서버에서 실행되고 있는 동안 자바 코드 및 소정의 미리 정의된 동작은 정적 웹 태그 콘텐츠를 삽입할 수 있다.
+
+
+<웹 서버 vs 어플리케이션 서버>
+Web Server : 웹페이지가 돌아가는 서버다. html, css에 초점이 맞춰져 있는 서버이며 정적인 페이지를 주로 처리한다. ex) Apache
+Application Server : 서블릿이나 JSP를 가지고는 동적인 페이지를 처리하는데 그 서블릿이나 JSP의 스크립트를 번역해주는게 어플리케이션서버이다. ex) Tomcat, JBoss
+
+<실행코드방식, 스크립트방식>
+실행코드 방식:
+웹서버에서 직접 프로그램을 호출하는 방식이다. 매번 프로그램을 직접 호출하기 때문에 웹 규모가 커질수록 메모리 낭비가 심해진다.
+스크립트 방식:
+웹 서버에서 어플리케이션 서버를 이용해 스크립트 코드 번역을 거쳐 동작하게 만든다. 따라서 프로그램을 웹서버가 직접 호출할 필요가 없다. 메모리를 효율적으로 쓸 수 있어서 웹규모가 큰 오늘날에는 JSP,PHP,ASP.net,Ruby 등을 쓴다.
+
+<어플리케이션 서버 == 웹 컨테이너??>
+어플리케이션 서버가 톰캣같은것이라고 알아보았는데 웹 어플리케이션을 실행해주는 이 톰캣을 웹 컨테이너라고 부른다. 예전에 서블릿만 썼을땐 서블릿 컨테이너라고 불렀었고, JSP를 쓸때 JSP 스크립트 코드 번역이 가능한 컨테이너를 JSP 컨테이너라고 불렀는데 요즘엔 서블릿,JSP를 한꺼번에 가능하도록 해주기 때문에 그냥 통합해서 웹 컨테이너라고 부른다.
+출처: http://overman.tistory.com/entry/JSP-란-무엇인가 [Overman Library]
