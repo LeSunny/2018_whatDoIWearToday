@@ -1,0 +1,27 @@
+
+
+1. keytool을 이용해 keystore 파일 생성
+"%JAVA_HOME%\bin\keytool" -genkey -alias tomcat_https -keypass changeit -storepass changeit -keyalg RSA -keystore c:\dev\apache-tomcat-9.0.0.M26\.keystore
+
+2. 생성한 keystore를 인증서 cer파일 형태로 저장
+"%JAVA_HOME%\bin\keytool" -export -alias tomcat_https -storepass changeit -file c:\dev\apache-tomcat-9.0.0.M26\server.cer -keystore c:\dev\apache-tomcat-9.0.0.M26\.keystore
+=> 이렇게 생성한 cer 파일은 IE 브라우저에 인증서로 추가하여, chrome에서도 제약없이 사이트 접근이 가능하다
+
+3. cer 인증서를 keystore에 탑재하기
+"%JAVA_HOME%\bin\keytool" -import -v -trustcacerts -alias tomcat_https -file c:\dev\apache-tomcat-9.0.0.M26\server.cer -keystore c:\dev\apache-tomcat-9.0.0.M26\.keystore -keypass changeit -storepass changeit
+
+
+4. $CATALINA_HOME/conf/server.xml 을 편집한다. 보통은 다음 문자열이 있으므로 주석을 풀고 keystoreFilestorePass=를 추가한다
+<Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+               maxThreads="150" scheme="https" secure="true"
+               clientAuth="false" sslProtocol="TLS"
+               keystoreFile="C:/dev/apache-tomcat-9.0.0.M26/.keystore" keystorePass="changeit"/>
+
+
+5. Windows의 경우 자체 방화벽에 막힐수 있으므로 확인한다.
+
+6. eclipse에서 servers에서 tomcat9 서버를 재등록한다. server.xml을 eclipse가 제대로 인식하기 위해서 필요하다.
+
+7. Servers의 Overview를 보면 SSL이 추가된 것을 볼 수 있다.
+
+8. tomcat 가동 후 브라우저에서 https://서버ip:8443 으로 테스트

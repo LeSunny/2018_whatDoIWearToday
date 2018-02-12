@@ -1,0 +1,101 @@
+웹에서 Session의 사용
+
+1. Session의 개요
+Cookie가 웹 브라우저에 사용자의 상태를 유지하기 위한 정보를 저장했다면 Session은 웹 서버쪽의 웹 컨테이너에 상태를 유지하기 위한 정보를 저장한다.
+세션은 사용자의 정보를 유지하기 위해 javax.servlet.http 패키지의 HttpSession 인터페이스를 구현해서 사용한다.
+ 사용자의 정보를 유지하기 위해 쿠키를 사용하는 것보다 세션을 사용한 웹 브라우저와 웹 서버의 상태 유지가 훨씬 안정적이고 보안상의 문제도 해결할 수 있다.
+세션은 웹 브라우저 당 한개씩 생성되어 웹 컨테이너에 저장된다. 웹 서버는 각각의 웹브라우저로부터 발생한 요청에 대해서 특별한 식별자를 부여한다. 이후에 이 식별자에 웹 브라우저에서 발생한 요청들과 비교해서 같은 식별자인지를 구별하게 된다.
+
+2. 세션(Session) 메소드 리스트
+출처: http://hyeonstorage.tistory.com/125 [개발이 하고 싶어요]
+
+* 세션 내장 객체
+http://hyeonstorage.tistory.com/83
+
+3. 세션(Session)의 속성
+* 세션의 속성 설정은 Session 객체의 setAttribute() 메소드를 사용한다.
+session.setAttribut("id","value");
+세션의 속성 값은 객체 형태만 올 수 있다.
+session 객체는 웹브라우저와 매핑되므로 해당 웹 브라우저를 닫지 않는 한 같은 창에서 열려진 페이지는 모두 같은 session 객체를 공유하게 된다. 따라서 session 객체의 setAttribute() 메소드를 사용해서 세션의 속성을 지정하게 되면 계속 상태를 유지하는 기능을 사용할 수 있다.
+
+* 세션의 속성을 사용하려면 session 객체의 getAttribute() 메소드를 사용한다.
+String id = (String)session.getAttribute("id");
+getAttribute() 메소드는 리턴 타입이 Object 타입이므로 사용 시 실제 할당된 객체 타입으로 casting을 해야 한다.
+
+* 세션의 속성을 삭제하려면 session 객체의 removeAttribute() 메소드를 사용한다.
+session.removeAttribute("id");
+
+* 세션의 모든 속성을 삭제할 때는 session 객체의 invalidate() 메소드를 사용한다.
+session.invalidate();
+
+4. 세션(Session) 사용 예제
+세션 설정(로그인 성공 시 로그인 아이디를 세션에 저장)
+
+<%@ page language ="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+
+
+
+<% request.setCharacterEncoding("euc-kr");%>
+
+
+
+<%
+
+
+String id = "";
+
+
+
+try{
+
+id = (String)session.getAttribute("id");            // request에서 id 파라미터를 가져온다
+
+
+
+if(id==null||id.equals(""){                            // id가 Null 이거나 없을 경우
+
+response.sendRedirect("loginform.jsp");    // 로그인 페이지로 리다이렉트 한다.
+
+}
+
+<%}%>
+
+
+
+- 세션(Session) 제거하기 (로그아웃 시 현재의 세션 정보를 제거한다.)
+
+
+
+<%@ page language ="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+
+
+
+<% session.invalidate(); %>                         // 세션 정보 제거
+
+
+
+<script>
+
+alert("로그아웃 되었습니다.");
+
+location.href="logout.jsp";                                    // 로그아웃 페이지로 이동
+
+</script>
+
+
+
+
+
+
+
+출처: http://hyeonstorage.tistory.com/125 [개발이 하고 싶어요]
+
+
+
+
+5. Spring AOP 사용 시 HttpServletRequest 접근하기
+Spring MVC 기반으로 개발하는 경우, URL 기준이 아닌, Method 기준으로 AOP 를 사용할 때가 있다. Method 기준으로 사용되기 때문에 원하는 시점을 선택하여 적용이 가능하다. Controller를 호출하기 전에 끼어드는 방식으로 Around 방식을 사용하면 Model에 값이 들어간 후이기 때문에 데이터를 편하게 가공할 수 있다. Model은 joinPoint.getArgs() 함수를 사용하여 값 확인이 가능하다.
+
+ProceedingJoinPoint 클래스는 Target Class, Target Method 정보를 담고 있다. proceed 메소드 호출 시 Target Method를 실행한다. 보통 joinPoint.getArgs() 함수를 사용하여 Target Method의 인자 값을 확인하여 사용하지만 매번 Controller Method에 인자로 HttpServletRequest 를 넣어줘야 하는 불편함이 있다.
+HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
+-> 이 방법은 AOP에서도 HttpServletRequest 객체에 접근이 가능하다. Controller 개발 시 인자로 HttpServletRequest를 받을 필요가 없다.
