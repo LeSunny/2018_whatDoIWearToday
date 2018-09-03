@@ -1,0 +1,64 @@
+13. 파일업로드
+
+insert into tb_board(
+	idx,
+	title,
+	DEL_GB,
+        CREA_DTM,
+        CREA_ID
+)
+VALUES
+)
+        #{IDX},
+        #{TITLE},
+        'N',
+        SYSDATE,
+        'Admin'
+)
+
+
+
+camera ->
+CREATE TABLE CLOSET(
+	IDX INT,
+	MAIN VARCHAR(9),
+	SMALL VARCHAR(9??),
+	STORED_FILE_NAME VARCHAR(36 BYTE) NOT NULL,
+	FILE_SIZE INT,
+	CREA_DTM DATE DEFAULT SYSDATE NOT NULL,
+	CREA_ID VARCHAR(30 BYTE?) NOT NULL,
+	DEL_GB VARCHAR(1 BYTE) DEFAULT 'N' NOT NULL,
+	PRIMARY KEY (IDX)
+)
+
+INSERT FILE
+	INSERT INTO TB_FILE
+        (
+		MAIN, SMALL, 
+            STORED_FILE_NAME,
+            FILE_SIZE,
+            CREA_ID
+        )
+        VALUES(
+#{MAIN, SMALL, }
+            #{STORED_FILE_NAME},
+            #{FILE_SIZE},
+            'Admin'
+        )
+
+INSERT BOARD
+insert into closet(
+	IDX,
+	대분류,
+	소분류,
+	CREA_DTM(생성 날짜),
+	사용자 아이디(CREA_ID)
+)VALUES(
+	#{IDX},
+	#{MAIN},
+	#{SMALL},
+	#{ID}
+)
+
+
+CAMERA API

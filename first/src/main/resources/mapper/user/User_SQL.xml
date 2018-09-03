@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="user">
+	<insert id="insertMember" parameterType="hashmap" >	    
+	    <![CDATA[
+	         
+	        INSERT INTO ACCOUNT_INFO
+	        (
+	        	ID,
+	        	pwd,
+	        	name,
+	        	sex,
+	        	birthyy,
+	        	birthmm,
+	        	birthdd,
+	        	email,
+	        	joindate,
+	        	frequency_visit,
+	        	cold,
+	        	hot	        	
+	        )
+	        VALUES(
+	        	#{id},
+	        	#{pwd},
+	        	#{name},
+	        	#{sex},
+	        	#{birthyy},
+	        	#{birthmm},
+	        	#{birthdd},
+	        	#{email},
+	        	current_timestamp,
+	        	0,
+	        	#{cold},
+	        	#{hot}
+	        )
+	    ]]>
+	 </insert>
+	    
+	<select id="selectMemberDetail" parameterType="HashMap" resultType="HashMap">
+        <![CDATA[
+            SELECT
+                NAME,
+                MEM_LEVEL,
+                SEX,
+                BIRTHYY
+            FROM
+                ACCOUNT_INFO
+           	WHERE
+           		ID=#{id}
+        ]]>
+    </select>
+    
+	<select id="selectUserPWD" parameterType="java.lang.String" resultType="HashMap">
+        <![CDATA[
+            SELECT
+                PWD
+            FROM
+                ACCOUNT_INFO
+           	WHERE
+           		ID=#{id}
+        ]]>
+    </select>
+    <select id="selectNumOfUserID" parameterType="java.lang.String" resultType="java.lang.Integer">
+        <![CDATA[
+            SELECT
+                IFNULL(COUNT(*),0)
+            FROM
+                ACCOUNT_INFO
+           	WHERE
+           		ID=#{id}
+        ]]>
+    </select>
+    
+    <insert id="insertPhoto" parameterType="hashmap">
+    	<![CDATA[
+    		INSERT INTO PHOTO_FILE(
+    			MAIN,
+    			SMALL,
+    			STORED_FILE_NAME,
+				CREA_DTM,
+				CREA_ID    		
+    		)
+    		VALUES(
+    			#{MAIN},
+    			#{SMALL},
+    			#{STORED_FILE_NAME},
+    			current_timestamp,
+    			#{ID}
+    		)
+    	]]>
+    </insert>
+    
+    <select id="selectFileNames" parameterType="HashMap" resultType="HashMap">
+        <![CDATA[
+            SELECT
+                STORED_FILE_NAME
+            FROM
+                PHOTO_FILE
+           	WHERE
+           		CREA_ID = #{ID} AND
+           		MAIN = #{MAIN} AND
+           		SMALL = #{SMALL} AND
+           		DEL_GB = 'N'
+            ORDER BY IDX DESC
+        ]]>
+    </select>
+</mapper>

@@ -1,0 +1,2 @@
+http://sunghs.tistory.com/10 : ID 중복체크 참고
+http://hellogk.tistory.com/88 : .html() 함수와 .text() 함수의 차이 참고

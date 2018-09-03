@@ -1,0 +1,35 @@
+Spring 3.x에서 인터셉트와 세션 기능으로 로그인구현 예제
+=======================================================
+
+구글검색키: "spring 3 세션 인터셉트 로그인 예제"
+            "spring 3 session login interceptorexample"
+
+https://www.mkyong.com/spring-security/spring-security-form-login-example/
+https://www.mkyong.com/spring-mvc/spring-mvc-handler-interceptors-example/
+http://hellogk.tistory.com/90
+http://blog.acronym.co.kr/590
+
+
+login.html : pro
+index.html
+info3.html <- 사용자 정보가 필요해서 없으면 거절
+
+여러페이지에 걸쳐 사용자 정보를 알고 있어야 (세션을 통해 저장)
+
+세션 -> 아이디, 레벨, ...
+
+
+
+
+* http://hellogk.tistory.com/90
+세션 체크가 필요한 페이지는 xml 설정에 의해 정의해줌으로써 각 페이지마다 로그인 체크를 해주는 코드를 작성해줄 필요가 없음
+
+mvc-config.xml : 여러개의 인터셉트를 정의할 수 있다. 
+interceptor 클래스 코드 : preHandle 만 사용(위 페이지에선)
+			admin 이라는 세션 key를 가진 정보가 null일 경우 -> 로그인 페이지로 이동
+			admin 세션 key 존재 시 main 페이지로 이동
+controller 클래스 코드 : 웹 페이지에서 받은 아이디, 패스워드 일치 시 admin 세션 key 생성. 일치하지 않으면 로그인 페이지로 재이동
+
+
+*http://blog.acronym.co.kr/590
+인터셉터 : 세션이 존재하지 않거나, 사용자가 세션에 없으면 다시 로그인 화면으로 이동하도록 구성.

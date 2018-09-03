@@ -1,0 +1,23 @@
+출처 : http://www.nextree.co.kr/p11205/
+
+
+1. response 객체에 문자열 담기
+Servlet 기반인 HttpServletResponse 객체를 사용하므로 Spring MVC 뿐만 아니라 Servlet 기반의 타 프레임워크에서도 사용 가능하다.
+문자열을 사용자가 임의로 Json 형식으로 작성하는 만큼 오탈자를 고려해야 하는 번거로움이 있다.
+
+2. ObjectMapper
+ObjectMapper 객체를 사용하는 방법인데 이 객체를 사용하여도 HttpServletResponse 객체를 사용한다.
+하지만 ObjectMapper 객체를 사용하게 되면 위 방법처럼 문자열을 개발자가 작성할 필요 없이 해당 객체를 Json 형식의 문자열로 바꾸어 주게 되어 개발자가 좀 더 간단히 구현할 수 있다.
+ObjectMapper 객체를 사용하기 위해선 jackson-databind 라이브러리를 프로젝트에 추가해야 한다.(pom.xml dependency)
+
+3. @ResponseBody
+메소드의 return형 앞에 @ResponseBody를 붙여 사용하면 해당객체가 자동으로 Json 객체로 변환되어 반환된다.
+
+@ResponseBody 환경 설정 방법
+1. jackson-mapper-asl 라이브러리 추가
+2. servlet xml 에 <annotation-driven /> 어노테이션 설정
+
+4. jsonView
+앞서 설정할 것
+1. json-lib-ext-spring 라이브러리 추가
+2. servlet xml에 bean 객체 설정 후 viewResolver 설정
