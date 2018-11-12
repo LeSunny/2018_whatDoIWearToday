@@ -1,60 +1,60 @@
-<¶È¶È °è¼¼¿ä?>
- ¿ÜÃâ ½Ã ³¯¾¾¸¦ ÀÏÀÏÀÌ È®ÀÎÇÏ°í ±â¿Â¿¡ ¸Â´Â ¿ÊÂ÷¸²À» °í¸£´Â °Í¿¡ ºÒÆíÇÔÀ» ´À²¸¿Ó½À´Ï´Ù. ±×·¡¼­ ÀÌ¸¦ À§ÇÑ ¼­ºñ½º¸¦ Á¦°øÇÏ´Â ¾îÇÃ¸®ÄÉÀÌ¼ÇÀ» °³¹ßÇÏ°íÀÚ ÇÏ¿´½À´Ï´Ù.
- <¶È¶È °è¼¼¿ä?> ´Â ³¯¾¾ API¸¦ ÅëÇØ ÇöÀç ¼­¿ï ³¯¾¾¿Í È¸¿øÀÇ ¼ºº° Á¤º¸¸¦ ÅëÇØ ¿À´ÃÀÇ ¿Ê ÄÚµð¸¦ ÇØÁÖ´Â ¼­ºñ½º¸¦ Á¦°øÇÕ´Ï´Ù.
-°úÁ¤ : 
- µ¥ÀÌÅÍ¸¦ Á¦°øÇÏ´Â À¥ ¼­¹ö´Â TomcatÀ» ÀÌ¿ëÇÏ¿´°í, µ¿Àû À¥ »çÀÌÆ® °³¹ßÀ» À§ÇÑ ÀÚ¹Ù ÇÃ·§ÆûÀÎ Spring Framework¸¦ ÀÌ¿ëÇÏ¿´½À´Ï´Ù.
- ±â»óÃ», Ä«¸Þ¶ó ¿ÀÇÂ API ¸¦ ÀÌ¿ëÇØ È¸¿ø °¢ °èÁ¤ ´ç °³ÀÎ ¿ÊµéÀ» »çÁøÀ¸·Î º¸°üÇÒ ¼ö ÀÖ´Â ¿ÊÀå°ú À§Ä¡ÇÑ Áö¿ªÀÇ ³¯¾¾¿¡ µû¸¥ ÃßÃµ ÄÚµð µîÀ» º¼ ¼ö ÀÖ´Â À¥ ¼­ºñ½º¸¦ Á¦°øÇÏµµ·Ï ÇÏ¿´½À´Ï´Ù.
-°á°ú : 
- ·Î±×ÀÎ ÇÑ È¸¿øÀº Web ¼­ºñ½º¿¡ Á¢¼Ó ½Ã ¸ÞÀÎÈ­¸é¿¡¼­ È¸¿øÀÌ À§Ä¡ÇÑ Áö¿ªÀÇ ±â¿Â°ú ³¯¾¾¸¦ Ã¼Å©ÇÒ ¼ö ÀÖ½À´Ï´Ù.
- ÀÌ ±â¿Â¿¡ ¾Ë¸ÂÀº ¿ÊÂ÷¸²À» È®ÀÎÇÒ ¼ö ÀÖ°í ±â¿Â°ú È¸¿øÀÇ ¼ºº°¿¡ µû¶ó ÃßÃµ ÄÚµð¸¦ ÀÌ¹ÌÁö·Î È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.
- ¸ÞÀÎ È­¸é¿¡¼­ ¡®³» ¿ÊÀå¡¯ÆäÀÌÁö¿¡ Á¢¼Ó ½Ã »óÀÇ, ÇÏÀÇ, ¾Æ¿ìÅÍ, ±âÅ¸ 4°¡Áö ´ëºÐ·ù Ä«Å×°í¸®¸¦ È®ÀÎÇÒ ¼ö ÀÖ´Âµ¥ ÀÌ Ä«Å×°í¸® Áß ÇÏ³ª¸¦ ¼±ÅÃÇÏ¸é ´õ ¼¼ºÐÈ­µÈ ºÐ·ùÀÇ Ä«Å×°í¸® ÆäÀÌÁö°¡ ¶å´Ï´Ù.
- ¼¼ºÐÈ­ µÈ ÆäÀÌÁö ³»¿¡¼­ + ±âÈ£¸¦ ´©¸£¸é Ä«¸Þ¶ó API¸¦ ÅëÇØ È¸¿ø º»ÀÎÀÇ ¿Ê »çÁøÀ» ÂïÀ» ¼ö ÀÖ°í ¼­¹öÀÇ DB¿¡ ÆÄÀÏ ÇüÅÂ·Î ÀúÀåÀÌ µË´Ï´Ù.
- È¸¿øÀº ¼¼ºÎ ÆäÀÌÁö¿¡¼­ ÀúÀåµÈ »çÁøÀ» È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.
+<ë˜‘ë˜‘ ê³„ì„¸ìš”?>
+ ì™¸ì¶œ ì‹œ ë‚ ì”¨ë¥¼ ì¼ì¼ì´ í™•ì¸í•˜ê³  ê¸°ì˜¨ì— ë§žëŠ” ì˜·ì°¨ë¦¼ì„ ê³ ë¥´ëŠ” ê²ƒì— ë¶ˆíŽ¸í•¨ì„ ëŠê»´ì™”ìŠµë‹ˆë‹¤. ê·¸ëž˜ì„œ ì´ë¥¼ ìœ„í•œ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ëŠ” ì›¹ ì„œë¹„ìŠ¤ë¥¼ ê°œë°œí•˜ê³ ìž í•˜ì˜€ìŠµë‹ˆë‹¤.
+ <ë˜‘ë˜‘ ê³„ì„¸ìš”?> ëŠ” ë‚ ì”¨ APIë¥¼ í†µí•´ í˜„ìž¬ ì„œìš¸ ë‚ ì”¨ì™€ íšŒì›ì˜ ì„±ë³„ ì •ë³´ë¥¼ í†µí•´ ì˜¤ëŠ˜ì˜ ì˜· ì½”ë””ë¥¼ í•´ì£¼ëŠ” ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•©ë‹ˆë‹¤.
+ê³¼ì • : 
+ ë°ì´í„°ë¥¼ ì œê³µí•˜ëŠ” ì›¹ ì„œë²„ëŠ” Tomcatì„ ì´ìš©í•˜ì˜€ê³ , ë™ì  ì›¹ ì‚¬ì´íŠ¸ ê°œë°œì„ ìœ„í•œ ìžë°” í”Œëž«í¼ì¸ Spring Frameworkë¥¼ ì´ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.
+ ê¸°ìƒì²­, ì¹´ë©”ë¼ ì˜¤í”ˆ API ë¥¼ ì´ìš©í•´ íšŒì› ê° ê³„ì • ë‹¹ ê°œì¸ ì˜·ë“¤ì„ ì‚¬ì§„ìœ¼ë¡œ ë³´ê´€í•  ìˆ˜ ìžˆëŠ” ì˜·ìž¥ê³¼ ìœ„ì¹˜í•œ ì§€ì—­ì˜ ë‚ ì”¨ì— ë”°ë¥¸ ì¶”ì²œ ì½”ë”” ë“±ì„ ë³¼ ìˆ˜ ìžˆëŠ” ì›¹ ì„œë¹„ìŠ¤ë¥¼ ì œê³µí•˜ë„ë¡ í•˜ì˜€ìŠµë‹ˆë‹¤.
+ê²°ê³¼ : 
+ ë¡œê·¸ì¸ í•œ íšŒì›ì€ Web ì„œë¹„ìŠ¤ì— ì ‘ì† ì‹œ ë©”ì¸í™”ë©´ì—ì„œ íšŒì›ì´ ìœ„ì¹˜í•œ ì§€ì—­ì˜ ê¸°ì˜¨ê³¼ ë‚ ì”¨ë¥¼ ì²´í¬í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+ ì´ ê¸°ì˜¨ì— ì•Œë§žì€ ì˜·ì°¨ë¦¼ì„ í™•ì¸í•  ìˆ˜ ìžˆê³  ê¸°ì˜¨ê³¼ íšŒì›ì˜ ì„±ë³„ì— ë”°ë¼ ì¶”ì²œ ì½”ë””ë¥¼ ì´ë¯¸ì§€ë¡œ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+ ë©”ì¸ í™”ë©´ì—ì„œ â€˜ë‚´ ì˜·ìž¥â€™íŽ˜ì´ì§€ì— ì ‘ì† ì‹œ ìƒì˜, í•˜ì˜, ì•„ìš°í„°, ê¸°íƒ€ 4ê°€ì§€ ëŒ€ë¶„ë¥˜ ì¹´í…Œê³ ë¦¬ë¥¼ í™•ì¸í•  ìˆ˜ ìžˆëŠ”ë° ì´ ì¹´í…Œê³ ë¦¬ ì¤‘ í•˜ë‚˜ë¥¼ ì„ íƒí•˜ë©´ ë” ì„¸ë¶„í™”ëœ ë¶„ë¥˜ì˜ ì¹´í…Œê³ ë¦¬ íŽ˜ì´ì§€ê°€ ëœ¹ë‹ˆë‹¤.
+ ì„¸ë¶„í™” ëœ íŽ˜ì´ì§€ ë‚´ì—ì„œ + ê¸°í˜¸ë¥¼ ëˆ„ë¥´ë©´ ì¹´ë©”ë¼ APIë¥¼ í†µí•´ íšŒì› ë³¸ì¸ì˜ ì˜· ì‚¬ì§„ì„ ì°ì„ ìˆ˜ ìžˆê³  ì„œë²„ì˜ DBì— íŒŒì¼ í˜•íƒœë¡œ ì €ìž¥ì´ ë©ë‹ˆë‹¤.
+ íšŒì›ì€ ì„¸ë¶€ íŽ˜ì´ì§€ì—ì„œ ì €ìž¥ëœ ì‚¬ì§„ì„ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
 
 ===========================================================
-1. Èûµé¾îµµ °Ô¼Ó ¿­½ÉÈ÷ ÇÒ °Í
-   ¾Ë¹Ù, ´Ù¸¥ °øºÎ ¿ÜÀÇ ½Ã°£Àº ¸ðµÎ ¿©±â¿¡ ½ñÀÚ
+1. íž˜ë“¤ì–´ë„ ê²Œì† ì—´ì‹¬ížˆ í•  ê²ƒ
+   ì•Œë°”, ë‹¤ë¥¸ ê³µë¶€ ì™¸ì˜ ì‹œê°„ì€ ëª¨ë‘ ì—¬ê¸°ì— ìŸìž
 
-[ÀÏÁ¤]
-~1¿ù Áß¼ø : ±âÈ¹, ¿¹Á¦¹®Á¦ ¿Ï¼º
-		JavaÀÇ Spring È¯°æ
-~2¿ù ¸» : 70~80%
-°³ÇÐ : Èå¸§´ë·Î
-~5¿ù : 90%
+[ì¼ì •]
+~1ì›” ì¤‘ìˆœ : ê¸°íš, ì˜ˆì œë¬¸ì œ ì™„ì„±
+		Javaì˜ Spring í™˜ê²½
+~2ì›” ë§ : 70~80%
+ê°œí•™ : íë¦„ëŒ€ë¡œ
+~5ì›” : 90%
 
-[Å« ±×¸²]
-IoT(»ç¹°ÀÎÅÍ³Ý) ÇÃ·§Æû
+[í° ê·¸ë¦¼]
+IoT(ì‚¬ë¬¼ì¸í„°ë„·) í”Œëž«í¼
 
 ============================================================
 
-<1¿ù Áß¼ø>
-1. ±âº» ½Ç·Â
-* http://addio3305.tistory.com/ ·Î ±âº» ÇÃ·§Æû ±¸Çö
-Java Spring È¯°æ¿¡ ´ëÇÑ ¼³¸í
-ÀÌÇØ°¡ Áß¿ä!
-* SpringÀÌ ¹ºÁö, ÀÏ¹ÝÀûÀÎ platform À» ¸¸µé¸é¼­ ÃÖ¼ÒÇÑÀÇ ¼öÁØÀ» ÃæÁ· ½ÃÅ°±â
-* ¿¹Áö ¹®Á¦¸¦ Ç®¸é¼­ ½Ç·Â Çâ»ó, ±â´ÉÀÇ º¯ÇüÀÌ³ª Ãß°¡¿¡ ´ëÇÑ task°¡ ÀÖÀ» ¼ö ÀÖÀ½
+<1ì›” ì¤‘ìˆœ>
+1. ê¸°ë³¸ ì‹¤ë ¥
+* http://addio3305.tistory.com/ ë¡œ ê¸°ë³¸ í”Œëž«í¼ êµ¬í˜„
+Java Spring í™˜ê²½ì— ëŒ€í•œ ì„¤ëª…
+ì´í•´ê°€ ì¤‘ìš”!
+* Springì´ ë­”ì§€, ì¼ë°˜ì ì¸ platform ì„ ë§Œë“¤ë©´ì„œ ìµœì†Œí•œì˜ ìˆ˜ì¤€ì„ ì¶©ì¡± ì‹œí‚¤ê¸°
+* ì˜ˆì§€ ë¬¸ì œë¥¼ í’€ë©´ì„œ ì‹¤ë ¥ í–¥ìƒ, ê¸°ëŠ¥ì˜ ë³€í˜•ì´ë‚˜ ì¶”ê°€ì— ëŒ€í•œ taskê°€ ìžˆì„ ìˆ˜ ìžˆìŒ
 
-2. ±âÈ¹
-IoT¿¡ ´ëÇÑ ´ë·«ÀûÀÎ ÀÌÇØ ÇÊ¿ä
+2. ê¸°íš
+IoTì— ëŒ€í•œ ëŒ€ëžµì ì¸ ì´í•´ í•„ìš”
 
 
 ============================================================
 [Review]
 <17-12-14>
-1. Spring°³¹ß ÀÔ¹®»çÀÌÆ®
+1. Springê°œë°œ ìž…ë¬¸ì‚¬ì´íŠ¸
 	http://addio3305.tistory.com/category/Spring?page=2
-        - °³¹ßÈ¯°æ±¸Ãà
-        - ½ºÇÁ¸µÇÁ·ÎÁ§Æ®»ý¼º
-        - ½ºÇÁ¸µMVC±¸Á¶
-        - ·Î±×(Log4j), ÀÎÅÍ¼ÁÅÍ(Interceptor)
-        - Mybatis¿¬µ¿
-        - °Ô½ÃÆÇ: ¸ñ·Ï, »ó¼¼, µî·Ï ±â´É±¸Çö
-        - ÆÄÀÏ upload/download
-        - AOP ¼³Á¤
-        - ÆäÀÌÂ¡ by ÀüÀÚÁ¤ºÎÇÁ·¹ÀÓ¿öÅ©
-        - ÆäÀÌÂ¡ by jQuery/Ajax
+        - ê°œë°œí™˜ê²½êµ¬ì¶•
+        - ìŠ¤í”„ë§í”„ë¡œì íŠ¸ìƒì„±
+        - ìŠ¤í”„ë§MVCêµ¬ì¡°
+        - ë¡œê·¸(Log4j), ì¸í„°ì…‰í„°(Interceptor)
+        - Mybatisì—°ë™
+        - ê²Œì‹œíŒ: ëª©ë¡, ìƒì„¸, ë“±ë¡ ê¸°ëŠ¥êµ¬í˜„
+        - íŒŒì¼ upload/download
+        - AOP ì„¤ì •
+        - íŽ˜ì´ì§• by ì „ìžì •ë¶€í”„ë ˆìž„ì›Œí¬
+        - íŽ˜ì´ì§• by jQuery/Ajax
 
 
 
@@ -62,24 +62,24 @@ IoT¿¡ ´ëÇÑ ´ë·«ÀûÀÎ ÀÌÇØ ÇÊ¿ä
 1. ActiveMQ : IOT protocol
 	http://activemq.apache.org/
 
-2. ActiveMQ¿¹Á¦
+2. ActiveMQì˜ˆì œ
 	https://examples.javacodegeeks.com/enterprise-java/jms/apache-activemq-hello-world-example/
 
 
 
 <17-12-21>
-1. ActiveMQ¿¹Á¦¸¦ ÀÌÅ¬¸³½º¿¡¼­ 2°³ µ¶¸³ÇÁ·ÎÁ§Æ®·Î ½ÇÇà
-     - 1°³ÇÁ·ÎÁ§Æ®(¸Þ½ÃÁö»ý¼º-µî·Ï), 1°³ÇÁ·ÎÁ§Æ®(¸Þ½ÃÁö¼ö½Å-Ã³¸®)
-     - º°µµ·Î ActiveMQ ºê·ÎÄ¿(¸Þ½ÃÁö¼­¹ö)°¡ ¹é±×¶ó¿îµå¿¡¼­ ½ÇÇàµÊ
+1. ActiveMQì˜ˆì œë¥¼ ì´í´ë¦½ìŠ¤ì—ì„œ 2ê°œ ë…ë¦½í”„ë¡œì íŠ¸ë¡œ ì‹¤í–‰
+     - 1ê°œí”„ë¡œì íŠ¸(ë©”ì‹œì§€ìƒì„±-ë“±ë¡), 1ê°œí”„ë¡œì íŠ¸(ë©”ì‹œì§€ìˆ˜ì‹ -ì²˜ë¦¬)
+     - ë³„ë„ë¡œ ActiveMQ ë¸Œë¡œì»¤(ë©”ì‹œì§€ì„œë²„)ê°€ ë°±ê·¸ë¼ìš´ë“œì—ì„œ ì‹¤í–‰ë¨
 	https://examples.javacodegeeks.com/enterprise-java/jms/apache-activemq-hello-world-example/
 
-2. ¼­¿ï½Ã ´ëÁß¹ö½º ½Ã½ºÅÛÀ» ¸ðµ¨¸µÇÏ¿© ´ÙÀ½°ú °°ÀÌ ½Ã¹Ä·¹ÀÌ¼Ç
-   ÇÁ·Î±×·¥ ÀÛ¼º
-     - ¼­¿ï½Ã ´ëÁß±³Åë½Ã½ºÅÛÀü¿ë ActiveMQ ºê·ÎÄ¿(¸Þ½ÃÁö¼­¹ö) ½ÇÇà
-     - ÀÌÅ¬¸³½º ÇÁ·ÎÁ§Æ®(KookminBusInformation) -> ±¹¹Î´ë Á¤¹® ¹ö½ºÁ¤·ùÀå ¾È³»½Ã½ºÅÛ ±¸Çö
-                                                   À§Ä¡Á¤º¸±¸µ¶ by receiving MQTT message
-     - ÀÌÅ¬¸³½º ÇÁ·ÎÁ§Æ®(BusLocationNode) -> 3°³³ë¼±(7211, 153, 110B) °¢°¢ 2°³ ¾²·¹µå·Î 
-                                             ½Ç½Ã°£À§Ä¡Á¤º¸ Publish by sending MQTT message
+2. ì„œìš¸ì‹œ ëŒ€ì¤‘ë²„ìŠ¤ ì‹œìŠ¤í…œì„ ëª¨ë¸ë§í•˜ì—¬ ë‹¤ìŒê³¼ ê°™ì´ ì‹œë®¬ë ˆì´ì…˜
+   í”„ë¡œê·¸ëž¨ ìž‘ì„±
+     - ì„œìš¸ì‹œ ëŒ€ì¤‘êµí†µì‹œìŠ¤í…œì „ìš© ActiveMQ ë¸Œë¡œì»¤(ë©”ì‹œì§€ì„œë²„) ì‹¤í–‰
+     - ì´í´ë¦½ìŠ¤ í”„ë¡œì íŠ¸(KookminBusInformation) -> êµ­ë¯¼ëŒ€ ì •ë¬¸ ë²„ìŠ¤ì •ë¥˜ìž¥ ì•ˆë‚´ì‹œìŠ¤í…œ êµ¬í˜„
+                                                   ìœ„ì¹˜ì •ë³´êµ¬ë… by receiving MQTT message
+     - ì´í´ë¦½ìŠ¤ í”„ë¡œì íŠ¸(BusLocationNode) -> 3ê°œë…¸ì„ (7211, 153, 110B) ê°ê° 2ê°œ ì“°ë ˆë“œë¡œ 
+                                             ì‹¤ì‹œê°„ìœ„ì¹˜ì •ë³´ Publish by sending MQTT message
 
 
 ============================================================
@@ -87,107 +87,107 @@ IoT¿¡ ´ëÇÑ ´ë·«ÀûÀÎ ÀÌÇØ ÇÊ¿ä
 
 <17-12-15>
 (12-18)
-* http://addio3305.tistory.com/category/Spring (1),(2),(3) ÀÐ°í ÇØº¸±â
-* IoT¿¡ ´ëÇÑ Á¶»ç ÇØ¿À±â
+* http://addio3305.tistory.com/category/Spring (1),(2),(3) ì½ê³  í•´ë³´ê¸°
+* IoTì— ëŒ€í•œ ì¡°ì‚¬ í•´ì˜¤ê¸°
 
 Tomcat : 
-Maven : ¾î¶² ¶óÀÌºê·¯¸®¸¦ »ç¿ëÇÏ°í ½ÍÀ» ¶§ ±× ¶óÀÌºê·¯¸®¸¦ ÀÚµ¿À¸·Î Ã£¾ÆÁÜ
-STS : Spring Tool Suit / ÀÌÅ¬¸³½º¿¡¼­ springÀ» »ç¿ëÇÒ ¼ö ÀÖ°Ô ÇØÁÜ
-SVN : ¿©·¯¸íÀÇ °³¹ßÀÚ°¡ ÇÔ²² ÇÏ´Â ÇÁ·ÎÁ§Æ®ÀÏ °æ¿ì ²À ÇÊ¿ä
-JSDT : jQuery´Â ÀÌÅ¬¸³½º ³»¿¡¼­ ÄÚµå ¾î½Ã½ºÆ® ±â´ÉÀ» »ç¿ëÇÒ ¼ö ÀÖ°Ô ÇØÁÜ
+Maven : ì–´ë–¤ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì‚¬ìš©í•˜ê³  ì‹¶ì„ ë•Œ ê·¸ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ìžë™ìœ¼ë¡œ ì°¾ì•„ì¤Œ
+STS : Spring Tool Suit / ì´í´ë¦½ìŠ¤ì—ì„œ springì„ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ í•´ì¤Œ
+SVN : ì—¬ëŸ¬ëª…ì˜ ê°œë°œìžê°€ í•¨ê»˜ í•˜ëŠ” í”„ë¡œì íŠ¸ì¼ ê²½ìš° ê¼­ í•„ìš”
+JSDT : jQueryëŠ” ì´í´ë¦½ìŠ¤ ë‚´ì—ì„œ ì½”ë“œ ì–´ì‹œìŠ¤íŠ¸ ê¸°ëŠ¥ì„ ì‚¬ìš©í•  ìˆ˜ ìžˆê²Œ í•´ì¤Œ
 
 <17-12-18>
 (12-21)
-* http://addio3305.tistory.com/category/Spring (4),(5),(6) ÀÐ°í ÇØº¸±â
-* http://activemq.apache.org/mqtt.html »çÀÌÆ®¿¡¼­,
-À©µµ¿ì ¹öÀüÀ¸·Î activemq ¼­¹öÇÁ·Î±×·¥À» ´Ù¿î¹Þ¾Æ
-ActiveMQ°¡ ¼­¹ö·Î µ¿ÀÛÇÏ´Ï ¼­¹öÇÁ·Î±×·¥À» ½ÇÇàÇØ ÀÌÅ¬¸³½º ¹öÀüÀ¸·Î Å×½ºÆ® ÇØº¸ÀÚ
-(ÄÚµå°¡ ÀÎÅÍ³Ý »ó¿¡ ¸¹ÀÌ ¶°µ¹¾Æ ´Ù´Ô)
-* Subscribe/Publish ¸ðµ¨ (= µ¥ÀÌÅÍ±³È¯ ¸ðµ¨) À§¿¡¼­ µ¹¾Æ°¡´Â ÇÁ·ÎÅäÄÝ¿¡ ´ëÇÑ Á¶»ç
+* http://addio3305.tistory.com/category/Spring (4),(5),(6) ì½ê³  í•´ë³´ê¸°
+* http://activemq.apache.org/mqtt.html ì‚¬ì´íŠ¸ì—ì„œ,
+ìœˆë„ìš° ë²„ì „ìœ¼ë¡œ activemq ì„œë²„í”„ë¡œê·¸ëž¨ì„ ë‹¤ìš´ë°›ì•„
+ActiveMQê°€ ì„œë²„ë¡œ ë™ìž‘í•˜ë‹ˆ ì„œë²„í”„ë¡œê·¸ëž¨ì„ ì‹¤í–‰í•´ ì´í´ë¦½ìŠ¤ ë²„ì „ìœ¼ë¡œ í…ŒìŠ¤íŠ¸ í•´ë³´ìž
+(ì½”ë“œê°€ ì¸í„°ë„· ìƒì— ë§Žì´ ë– ëŒì•„ ë‹¤ë‹˜)
+* Subscribe/Publish ëª¨ë¸ (= ë°ì´í„°êµí™˜ ëª¨ë¸) ìœ„ì—ì„œ ëŒì•„ê°€ëŠ” í”„ë¡œí† ì½œì— ëŒ€í•œ ì¡°ì‚¬
 
 <17-12-21>
 (17-12-26)
-* http://addio3305.tistory.com/category/Spring (7),(8),(9),(10) ÀÐ°í ÇØº¸±â
- (spring(9)ºÎÅÍ DB´Â OracleÀÌ ¾Æ´Ñ MySQL·Î ÇÒ °Í)
+* http://addio3305.tistory.com/category/Spring (7),(8),(9),(10) ì½ê³  í•´ë³´ê¸°
+ (spring(9)ë¶€í„° DBëŠ” Oracleì´ ì•„ë‹Œ MySQLë¡œ í•  ê²ƒ)
 * ActiveMQ
-=>  ¼­¿ï½Ã ´ëÁß¹ö½º ½Ã½ºÅÛÀ» ¸ðµ¨¸µÇÏ¿© ´ÙÀ½°ú °°ÀÌ ½Ã¹Ä·¹ÀÌ¼Ç
-   ÇÁ·Î±×·¥ ÀÛ¼º
-     - ¼­¿ï½Ã ´ëÁß±³Åë½Ã½ºÅÛÀü¿ë ActiveMQ ºê·ÎÄ¿(¸Þ½ÃÁö¼­¹ö) ½ÇÇà
-     - ÀÌÅ¬¸³½º ÇÁ·ÎÁ§Æ®(KookminBusInformation) -> ±¹¹Î´ë Á¤¹® ¹ö½ºÁ¤·ùÀå ¾È³»½Ã½ºÅÛ ±¸Çö
-                                                   À§Ä¡Á¤º¸±¸µ¶ by receiving MQTT message
-     - ÀÌÅ¬¸³½º ÇÁ·ÎÁ§Æ®(BusLocationNode) -> 3°³³ë¼±(7211, 153, 110B) °¢°¢ 2°³ ¾²·¹µå·Î 
-                                             ½Ç½Ã°£À§Ä¡Á¤º¸ Publish by sending MQTT message
+=>  ì„œìš¸ì‹œ ëŒ€ì¤‘ë²„ìŠ¤ ì‹œìŠ¤í…œì„ ëª¨ë¸ë§í•˜ì—¬ ë‹¤ìŒê³¼ ê°™ì´ ì‹œë®¬ë ˆì´ì…˜
+   í”„ë¡œê·¸ëž¨ ìž‘ì„±
+     - ì„œìš¸ì‹œ ëŒ€ì¤‘êµí†µì‹œìŠ¤í…œì „ìš© ActiveMQ ë¸Œë¡œì»¤(ë©”ì‹œì§€ì„œë²„) ì‹¤í–‰
+     - ì´í´ë¦½ìŠ¤ í”„ë¡œì íŠ¸(KookminBusInformation) -> êµ­ë¯¼ëŒ€ ì •ë¬¸ ë²„ìŠ¤ì •ë¥˜ìž¥ ì•ˆë‚´ì‹œìŠ¤í…œ êµ¬í˜„
+                                                   ìœ„ì¹˜ì •ë³´êµ¬ë… by receiving MQTT message
+     - ì´í´ë¦½ìŠ¤ í”„ë¡œì íŠ¸(BusLocationNode) -> 3ê°œë…¸ì„ (7211, 153, 110B) ê°ê° 2ê°œ ì“°ë ˆë“œë¡œ 
+                                             ì‹¤ì‹œê°„ìœ„ì¹˜ì •ë³´ Publish by sending MQTT message
 <12-26>
 (12-28)
-* spring (10) ¸¶Àú ÇØ¿À±â
-* ¼­¿ï½Ã ¹ö½º ½Ã½ºÅÛ ÇÁ·Î±×·¡¹Ö ÇØ¿À±â
+* spring (10) ë§ˆì € í•´ì˜¤ê¸°
+* ì„œìš¸ì‹œ ë²„ìŠ¤ ì‹œìŠ¤í…œ í”„ë¡œê·¸ëž˜ë° í•´ì˜¤ê¸°
 
 <12-28>
 (1-2)
-1. º»ÀÎÀÇ ½º¸¶Æ®ÆùÀ» Æ÷ÇÔÇÏ¿© 3°¡Áö ÆùÀÌ °¡Áö°í ÀÖ´Â ¼¾¼­ÀÇ Á¾·ù¿¡
-   ´ëÇÏ¿© Á¶»çÇÏ¶ó.
+1. ë³¸ì¸ì˜ ìŠ¤ë§ˆíŠ¸í°ì„ í¬í•¨í•˜ì—¬ 3ê°€ì§€ í°ì´ ê°€ì§€ê³  ìžˆëŠ” ì„¼ì„œì˜ ì¢…ë¥˜ì—
+   ëŒ€í•˜ì—¬ ì¡°ì‚¬í•˜ë¼.
 => Galaxy S7, Iphone 6S, Galaxy Tab
 
-2. ´ëÇ¥ÀûÀÎ ¾Èµå·ÎÀÌµå¾Û ÇÁ·Î±×·¥ °³¹ßÈ¯°æÀÎ Android Studio(IntelliJ±â¹Ý)À»
-   ¼³Ä¡ÇÏ°í HelloWorld¾ÛÇÁ·Î±×·¥À» º»ÀÎÀÇ ½º¸¶Æ®Æù¿¡¼­ ½ÇÇàÇÏµµ·Ï ÇÏ¶ó.
-=> PC¿¡¼­ ¾Èµå·ÎÀÌµå ½ºÆ©µð¿À·Î ¸¸µç´ÙÀ½¿¡ À¯¼±À¸·Î ¸Þ´º¸¦ ´©¸£¸é ´Ù¿î·Îµå°¡ µÊ!
+2. ëŒ€í‘œì ì¸ ì•ˆë“œë¡œì´ë“œì•± í”„ë¡œê·¸ëž¨ ê°œë°œí™˜ê²½ì¸ Android Studio(IntelliJê¸°ë°˜)ì„
+   ì„¤ì¹˜í•˜ê³  HelloWorldì•±í”„ë¡œê·¸ëž¨ì„ ë³¸ì¸ì˜ ìŠ¤ë§ˆíŠ¸í°ì—ì„œ ì‹¤í–‰í•˜ë„ë¡ í•˜ë¼.
+=> PCì—ì„œ ì•ˆë“œë¡œì´ë“œ ìŠ¤íŠœë””ì˜¤ë¡œ ë§Œë“ ë‹¤ìŒì— ìœ ì„ ìœ¼ë¡œ ë©”ë‰´ë¥¼ ëˆ„ë¥´ë©´ ë‹¤ìš´ë¡œë“œê°€ ë¨!
 
-3. º»ÀÎÀÇ ½º¸¶Æ®ÆùÀÌ °¡Áö°í ÀÖ´Â ¸ðµç ¼¾¼­ÀÇ µ¿ÀÛ¿©ºÎ¸¦ È®ÀÎÇÏ´Â
-   ¾ÛÀ» ±¸ÇöÇÏ°í µ¥¸ðÇÏ¶ó.
+3. ë³¸ì¸ì˜ ìŠ¤ë§ˆíŠ¸í°ì´ ê°€ì§€ê³  ìžˆëŠ” ëª¨ë“  ì„¼ì„œì˜ ë™ìž‘ì—¬ë¶€ë¥¼ í™•ì¸í•˜ëŠ”
+   ì•±ì„ êµ¬í˜„í•˜ê³  ë°ëª¨í•˜ë¼.
 
-* http://addio3305.tistory.com/category/Spring (11),(12) ÀÐ°í ÇØº¸±â
-* ¼­¿ï½Ã ¹ö½º ½Ã½ºÅÛ º¸¿ÏÇØº¸±â
+* http://addio3305.tistory.com/category/Spring (11),(12) ì½ê³  í•´ë³´ê¸°
+* ì„œìš¸ì‹œ ë²„ìŠ¤ ì‹œìŠ¤í…œ ë³´ì™„í•´ë³´ê¸°
 
 <1-2>
 (1-4)
-* 15ÆäÀÌÁö±îÁö
-* spring -> ¾ÕÀ¸·Î 5¿ù±îÁö ÇÒ °Í
-»ç¿ëÀÚ °³³ä Ãß°¡ -> ·Î±×ÀÎ ±â´É, °Ô½Ã¹°¿¡ °Ô½ÃÀÚ Ç¥½Ã
-SNS¿Í ¿¬µ¿
-* 2,3¹ø ¸¶Àú
+* 15íŽ˜ì´ì§€ê¹Œì§€
+* spring -> ì•žìœ¼ë¡œ 5ì›”ê¹Œì§€ í•  ê²ƒ
+ì‚¬ìš©ìž ê°œë… ì¶”ê°€ -> ë¡œê·¸ì¸ ê¸°ëŠ¥, ê²Œì‹œë¬¼ì— ê²Œì‹œìž í‘œì‹œ
+SNSì™€ ì—°ë™
+* 2,3ë²ˆ ë§ˆì €
 
 <1-4>
 (1-8)
-* ¾ÕÀ¸·Î ÇÒ IoT ÇÃ·§Æû ±âÈ¹³»¿ë -- ½º¸¶Æ®ÆùÀÇ ¾î¶² ¼¾¼­¸¦ Æ¯¼ºÈ­ ½ÃÅ² °Í
-* 180104 Æú´õ ¾È, ´õ ³ªÀº ½Ã½ºÅÛ ¾ÆÅ°ÅØÃÄ¸¦ Ã£¾Æ¿À±â
+* ì•žìœ¼ë¡œ í•  IoT í”Œëž«í¼ ê¸°íšë‚´ìš© -- ìŠ¤ë§ˆíŠ¸í°ì˜ ì–´ë–¤ ì„¼ì„œë¥¼ íŠ¹ì„±í™” ì‹œí‚¨ ê²ƒ
+* 180104 í´ë” ì•ˆ, ë” ë‚˜ì€ ì‹œìŠ¤í…œ ì•„í‚¤í…ì³ë¥¼ ì°¾ì•„ì˜¤ê¸°
 
 
 <1-8>
 (1-11)
-* ÇÁ·Î±×·¥±¸Á¶Åä·Ð 3 ¿Ï¼º
+* í”„ë¡œê·¸ëž¨êµ¬ì¡°í† ë¡  3 ì™„ì„±
 
 <1-11>
 (1-15)
-* ÇÁ·Î±×·¥±¸Á¶Åä·Ð 4 ¿Ï¼º
-* ½º¸¶Æ®ÆùÀÇ GPS ¼¾¼­ 3ÀÏ°£ Å×½ºÆ® ÇÏ±â
-* ¸¸µé °Í ´Ù½Ã »ý°¢ÇØº¸±â
+* í”„ë¡œê·¸ëž¨êµ¬ì¡°í† ë¡  4 ì™„ì„±
+* ìŠ¤ë§ˆíŠ¸í°ì˜ GPS ì„¼ì„œ 3ì¼ê°„ í…ŒìŠ¤íŠ¸ í•˜ê¸°
+* ë§Œë“¤ ê²ƒ ë‹¤ì‹œ ìƒê°í•´ë³´ê¸°
 
 <1-15>
 (1-17)
-* ¼­ºñ½º ´Ù½Ã ±¸»ó
-* user table »ý°¢ÇØ ¿Ã°Í. ¾î¶² ¿­? ¾î¶² Å¸ÀÔ? -> ¿Ï¼ºÇÏÁø ¸øÇØµµ Áß°£°úÁ¤ ¹ßÇ¥ÇÒ °Í
+* ì„œë¹„ìŠ¤ ë‹¤ì‹œ êµ¬ìƒ
+* user table ìƒê°í•´ ì˜¬ê²ƒ. ì–´ë–¤ ì—´? ì–´ë–¤ íƒ€ìž…? -> ì™„ì„±í•˜ì§„ ëª»í•´ë„ ì¤‘ê°„ê³¼ì • ë°œí‘œí•  ê²ƒ
 
 <1-17>
 (1-25)
-* ±âÈ¹ÇÑ °Í ½ºÅä¸®º¸µå ¿Ï¼º
-* user table º¸¿ÏÇÏ±â
+* ê¸°íší•œ ê²ƒ ìŠ¤í† ë¦¬ë³´ë“œ ì™„ì„±
+* user table ë³´ì™„í•˜ê¸°
 
 <1-25>
 (1-31)
-* Singleton(bean) : °´Ã¼ÀÇ »ý¼ºÀº ÇÑ¹ø¸¸ ÇÏ°í ¿äÃ»ÀÌ ÀÖÀ»¶§¸¶´Ù ÁÖ¼Ò°ªÀ» ¾Ë·ÁÁÖ¾î ¸Þ¸ð¸® ¼Ò¸ð¸¦ ÁÙÀÌ°í ¼Óµµ¸¦ ³ôÀÎ´Ù. getBean()
-* AOP : ¸ðµç ¼­ºñ½º ·ÎÁ÷¿¡¼± ÀÎÁõ(¿¹) proxy¸¦ °ÅÃÄ¾ß ÇØ´ç DAO·Î Á¢±ÙÇÒ ¼ö ÀÖµµ·Ï ÇÑ´Ù. »õ·Î¿î ÄÚµå¸¦ Ãß°¡ÇßÀ» ¶§ ¿ø·¡ ÄÚµå¸¦ °ÇµéÀÌÁö ¾Ê¾Æ À§ÇèÀÌ ÀÛ¾ÆÁø´Ù.
-* user table ¿¡ È¸¿ø·¹º§ column Ãß°¡
-* À¥¿¡¼­ »ç¿ë °¡´ÉÇÑ Ä«¸Þ¶ó API ¼Ö·ç¼Ç ÄÄÆ÷³ÍÆ® Ã£±â
-* DAO Àü ÀÎÁõÇÏ´Â ÇÁ·Ï½Ã ¸¸µé¾î AOP ±â´É ¿Ï¼ºÇÏ±â (spring 16 Âü°í)
+* Singleton(bean) : ê°ì²´ì˜ ìƒì„±ì€ í•œë²ˆë§Œ í•˜ê³  ìš”ì²­ì´ ìžˆì„ë•Œë§ˆë‹¤ ì£¼ì†Œê°’ì„ ì•Œë ¤ì£¼ì–´ ë©”ëª¨ë¦¬ ì†Œëª¨ë¥¼ ì¤„ì´ê³  ì†ë„ë¥¼ ë†’ì¸ë‹¤. getBean()
+* AOP : ëª¨ë“  ì„œë¹„ìŠ¤ ë¡œì§ì—ì„  ì¸ì¦(ì˜ˆ) proxyë¥¼ ê±°ì³ì•¼ í•´ë‹¹ DAOë¡œ ì ‘ê·¼í•  ìˆ˜ ìžˆë„ë¡ í•œë‹¤. ìƒˆë¡œìš´ ì½”ë“œë¥¼ ì¶”ê°€í–ˆì„ ë•Œ ì›ëž˜ ì½”ë“œë¥¼ ê±´ë“¤ì´ì§€ ì•Šì•„ ìœ„í—˜ì´ ìž‘ì•„ì§„ë‹¤.
+* user table ì— íšŒì›ë ˆë²¨ column ì¶”ê°€
+* ì›¹ì—ì„œ ì‚¬ìš© ê°€ëŠ¥í•œ ì¹´ë©”ë¼ API ì†”ë£¨ì…˜ ì»´í¬ë„ŒíŠ¸ ì°¾ê¸°
+* DAO ì „ ì¸ì¦í•˜ëŠ” í”„ë¡ì‹œ ë§Œë“¤ì–´ AOP ê¸°ëŠ¥ ì™„ì„±í•˜ê¸° (spring 16 ì°¸ê³ )
 
 <1-31>
 (2-7)
-* 180131.txt : ÅÛÇÃ¸´°ú callback ÇÔ¼ö¸¦ ÀÌ¿ëÇØ try ¾ÈÀÇ ³»¿ëÀ» ºÐ¸®½ÃÅ³ ¼ö ÀÖ´Ù.
-* ÀÎÁõ AOP : AOP´Â ¾î´À À§Ä¡µç µé¾î°¥ ¼ö ÀÖ´Ù. È¸¿ø¸¸ Á¢±Ù °¡´ÉÇÑ °Ô½ÃÆÇ / ÇØ´ç ±Û¾´ È¸¿ø¸¸ ¼öÁ¤ÇÏ±â°¡ º¸ÀÌ´Â boardDetail µÑ Áß ÇÏ³ª¸¦ ¸ÕÀú ±¸ÇöÇÏÀÚ
-* Ä«¸Þ¶ó API : À¥¿¡¼­ µ¹¾Æ°¡µµ·Ï ÇÏ±â. http°¡ µÇ´Â À¥ Ä«¸Þ¶ó API¸¦ »õ·Î Ã£°Å³ª ÅèÄ¹ÀÌ https°¡ µÇ´Â ¹æ¹ýÀ» Ã£±â
+* 180131.txt : í…œí”Œë¦¿ê³¼ callback í•¨ìˆ˜ë¥¼ ì´ìš©í•´ try ì•ˆì˜ ë‚´ìš©ì„ ë¶„ë¦¬ì‹œí‚¬ ìˆ˜ ìžˆë‹¤.
+* ì¸ì¦ AOP : AOPëŠ” ì–´ëŠ ìœ„ì¹˜ë“  ë“¤ì–´ê°ˆ ìˆ˜ ìžˆë‹¤. íšŒì›ë§Œ ì ‘ê·¼ ê°€ëŠ¥í•œ ê²Œì‹œíŒ / í•´ë‹¹ ê¸€ì“´ íšŒì›ë§Œ ìˆ˜ì •í•˜ê¸°ê°€ ë³´ì´ëŠ” boardDetail ë‘˜ ì¤‘ í•˜ë‚˜ë¥¼ ë¨¼ì € êµ¬í˜„í•˜ìž
+* ì¹´ë©”ë¼ API : ì›¹ì—ì„œ ëŒì•„ê°€ë„ë¡ í•˜ê¸°. httpê°€ ë˜ëŠ” ì›¹ ì¹´ë©”ë¼ APIë¥¼ ìƒˆë¡œ ì°¾ê±°ë‚˜ í†°ìº£ì´ httpsê°€ ë˜ëŠ” ë°©ë²•ì„ ì°¾ê¸°
 
 <2-7>
 (2-14)
-* 180207.txt 2¹ø ½ºÅÍµð - ¸ÞÀÏ
-* ÀÎÁõ, º¸¾È
-* ÀÎÁõ AOP ÇÏ±â Àü¿¡ È¸¿ø°¡ÀÔ, ·Î±×ÀÎ ÆäÀÌÁö ¸ÕÀú ¸¸µé±â -> ¸ÞÀÏÀ» º¸³»¼­ ¹Þ°í ¸µÅ©¸¦ Å¬¸¯ÇÏ¸é º»ÀÎÀÌ ¸Â´Â °ÍÀ¸·Î(Á¦ÀÏ °£´Ü)
+* 180207.txt 2ë²ˆ ìŠ¤í„°ë”” - ë©”ì¼
+* ì¸ì¦, ë³´ì•ˆ
+* ì¸ì¦ AOP í•˜ê¸° ì „ì— íšŒì›ê°€ìž…, ë¡œê·¸ì¸ íŽ˜ì´ì§€ ë¨¼ì € ë§Œë“¤ê¸° -> ë©”ì¼ì„ ë³´ë‚´ì„œ ë°›ê³  ë§í¬ë¥¼ í´ë¦­í•˜ë©´ ë³¸ì¸ì´ ë§žëŠ” ê²ƒìœ¼ë¡œ(ì œì¼ ê°„ë‹¨)
